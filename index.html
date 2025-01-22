@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <main class="wrapper__app">
+      <section class="card">
+        <section class="section__form">
+          <h1 class="title__card">Stay updated!</h1>
+          <p class="subtitle__card">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              Product discovery and building what matters
+            </li>
+            <li class="list-item">Measuring to ensure updates are a success</li>
+            <li class="list-item">And much more!</li>
+          </ul>
+          <form class="form" action="submit" novalidate>
+            <label class="label" for="email"
+              >Email Address
+              <span class="error-message hidden"></span>
+            </label>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+            />
+            <button id="submit-button" class="button" type="submit">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </section>
+        <section class="section__image">
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
+          <!-- <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" /> -->
+        </section>
+      </section>
+
+      <section class="success-card hidden">
+        <article class="success-content">
+          <h1 class="title__card">Thanks for subscribing!</h1>
+          <p class="subtitle__card">
+            A confirmation email has been sent to
+            <span>ash@loremcompany.com</span>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+          <img
+            class="image__success"
+            src="./assets/images/icon-success.svg"
+            alt=""
+          />
+        </article>
+        <button id="dismiss-button" class="button">Dismiss message</button>
+      </section>
+    </main>
+  </body>
+  <script src="./index.js"></script>
+</html>

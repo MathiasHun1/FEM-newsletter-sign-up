@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('./assets/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+:root {
+  --clr-tomato: hsl(4, 100%, 67%);
+  --clr-tomato-opaque: hsla(4 100 67 / 0.3);
+  --clr-slate-500: hsl(234, 17%, 26%);
+  --clr-slate-700: hsl(234, 29%, 20%);
+  --clr-chacoral: hsl(235, 18%, 26%);
+  --clr-grey: hsl(231, 7%, 60%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper__app {
+  min-height: 100%;
+}
+
+/* utilities */
+.hidden {
+  display: none !important;
+}
+
+.error {
+  border-color: var(--clr-tomato) !important;
+  color: var(--clr-tomato) !important;
+  background: var(--clr-tomato-opaque) !important;
+}
+
+/* app styles for mobile */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-slate-500);
+  color: var(--clr-slate-700);
+  font-family: 'Roboto-Regular';
+  letter-spacing: 0px;
+}
+
+.card {
+  background-color: var(--clr-white);
+  width: fit-content;
+  max-width: 420px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.section__form {
+  padding-top: 40px;
+  padding-inline: 24px;
+  padding-bottom: 30px;
+}
+
+.title__card {
+  font-family: 'Roboto-Bold';
+  font-size: calc(40rem / 16);
+  line-height: 1;
+}
+
+.title__card,
+.subtitle__card {
+  margin-bottom: 24px;
+}
+
+.list {
+  margin-bottom: 40px;
+}
+
+.subtitle__card {
+}
+
+.label {
+  font-family: 'Roboto-Bold';
+  font-size: calc(12rem / 16);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--clr-grey);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.error-message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--clr-tomato);
+}
+
+.button {
+  font-family: 'Roboto-Bold';
+  color: var(--clr-white);
+  background-color: var(--clr-slate-700);
+  width: 100%;
+  padding-block: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.success-card {
+  width: 100%;
+  height: 100vh;
+  max-width: 420px;
+  background-color: var(--clr-white);
+  padding-inline: 24px;
+  padding-top: 6rem;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.success-content {
+  padding-top: 6rem;
+  position: relative;
+}
+
+.image__success {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.subtitle__card span {
+  font-family: 'Roboto-Bold';
+}
