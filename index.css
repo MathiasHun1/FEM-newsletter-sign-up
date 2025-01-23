@@ -11,6 +11,9 @@
 }
 
 :root {
+  --clr-orange: hsl(14 100 61);
+  --clr-orange-opaque: hsla(14 100 61 / 0.5);
+  --clr-pink: hsl(346 100 66);
   --clr-tomato: hsl(4, 100%, 67%);
   --clr-tomato-opaque: hsla(4 100 67 / 0.3);
   --clr-slate-500: hsl(234, 17%, 26%);
@@ -138,7 +141,6 @@ body {
   text-align: center;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
 }
 
 .success-card {
@@ -171,6 +173,12 @@ body {
 
 input:focus {
   outline: 2px solid black;
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(var(--clr-orange), var(--clr-pink));
+  box-shadow: 0px 10px 15px var(--clr-orange-opaque);
 }
 
 /* MEDIA */

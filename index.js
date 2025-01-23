@@ -30,7 +30,9 @@ const clearInputValue = () => {
 
 const setError = (text) => {
   errorMessage.innerText = text;
-  toggleVisibility(errorMessage);
+  if (!hasBeenSubmittedWrongly) {
+    toggleVisibility(errorMessage);
+  }
   inputField.classList.add('error');
 };
 
@@ -48,6 +50,7 @@ inputField.addEventListener('input', (e) => {
     const result = validateInput(userInput);
     if (result.isValid || userInput === '') {
       removeErrorState();
+      hasBeenSubmittedWrongly = false;
     }
   }
 });
