@@ -56,7 +56,9 @@ body {
 .card {
   background-color: var(--clr-white);
   width: fit-content;
+  width: 375px;
   max-width: var(--mobile-width);
+  max-width: 375px;
   min-width: 320px;
   display: flex;
   flex-direction: column-reverse;
