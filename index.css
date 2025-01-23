@@ -230,6 +230,10 @@ button:hover {
     grid-template-columns: 1.3fr 1fr;
   }
 
+  .title__card {
+    font-size: calc(56rem / 16);
+  }
+
   .section__form {
     padding-inline: 40px;
   }
