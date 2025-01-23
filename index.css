@@ -34,6 +34,10 @@
 }
 
 /* app styles for mobile */
+.image__desktop {
+  display: none;
+}
+
 html,
 body {
   height: 100%;
@@ -55,7 +59,6 @@ body {
   background-color: var(--clr-white);
   width: fit-content;
   max-width: var(--mobile-width);
-  max-width: 375px;
   min-width: 320px;
   display: flex;
   flex-direction: column-reverse;
@@ -80,9 +83,23 @@ body {
 
 .list {
   margin-bottom: 40px;
+  padding: 0;
+  list-style-type: none;
 }
 
-.subtitle__card {
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.list-item span {
+  display: inline-block;
+}
+
+.list-item img {
+  width: 20px;
+  display: inline-block;
 }
 
 .label {
@@ -150,4 +167,46 @@ body {
 
 .subtitle__card span {
   font-family: 'Roboto-Bold';
+}
+
+@media (min-width: 650px) {
+  .image__mobile {
+    display: none;
+  }
+
+  .image__desktop {
+    display: block;
+    width: 100%;
+  }
+
+  .card {
+    min-width: 600px;
+    width: unset;
+    max-width: unset;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 36px;
+  }
+
+  .section__image {
+    width: 100%;
+    aspect-ratio: 400/593;
+  }
+
+  .section__form {
+    padding: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .card {
+    grid-template-columns: 1.3fr 1fr;
+  }
+
+  .section__form {
+    padding-inline: 40px;
+  }
 }
