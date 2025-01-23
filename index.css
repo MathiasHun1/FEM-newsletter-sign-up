@@ -88,6 +88,9 @@ body {
   margin-bottom: 40px;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .list-item {
@@ -235,6 +238,6 @@ button:hover {
   }
 
   .section__form {
-    padding-inline: 40px;
+    max-width: 350px;
   }
 }
