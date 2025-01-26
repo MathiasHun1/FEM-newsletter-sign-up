@@ -25,17 +25,6 @@
   --mobile-width: 375px;
 }
 
-/* utilities */
-.hidden {
-  display: none !important;
-}
-
-.error {
-  border-color: var(--clr-tomato) !important;
-  color: var(--clr-tomato) !important;
-  background: var(--clr-tomato-opaque) !important;
-}
-
 /* app styles for mobile */
 .image__desktop {
   display: none;
@@ -240,4 +229,16 @@ button:hover {
   .section__form {
     max-width: 350px;
   }
+}
+
+/* utilities */
+
+.hidden {
+  display: none;
+}
+
+.error {
+  border-color: var(--clr-tomato);
+  color: var(--clr-tomato);
+  background: var(--clr-tomato-opaque);
 }
